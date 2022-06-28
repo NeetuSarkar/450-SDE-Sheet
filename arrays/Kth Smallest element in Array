@@ -1,0 +1,26 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main(){
+int n;
+cin>>n;
+
+int arr[n];
+
+//getting input in array
+for(int i=0;i<n;i++){
+    cin>>arr[i];
+}
+
+int k;
+cin>>k;
+
+//sort the array
+sort(arr,arr+n);
+ 
+ //getting the  kth smallest elemtnt in array;
+ cout<<arr[k-1];
+
+
+}
